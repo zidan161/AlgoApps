@@ -13,10 +13,10 @@ import org.jetbrains.anko.support.v4.onRefresh
 
 class MainActivity : AppCompatActivity(), MainView {
 
+    private var memes: MutableList<Meme> = mutableListOf()
     private lateinit var listMeme: RecyclerView
     private lateinit var progressBar: ProgressBar
     private lateinit var swipeRefreshLayout: SwipeRefreshLayout
-    private var memes: MutableList<Meme> = mutableListOf()
     private lateinit var presenter: MainPresenter
     private lateinit var adapter: MainAdapter
 
